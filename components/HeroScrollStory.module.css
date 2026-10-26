@@ -1,0 +1,257 @@
+.story {
+  position: relative;
+  height: var(--story-h, 400vh);
+  background: var(--slate);
+}
+
+.stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+  background: var(--slate);
+}
+
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* darkens the video for readable text; overlay B gets a stronger left scrim */
+.stage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 15, 15, 0.4), rgba(15, 15, 15, 0.1) 45%, rgba(15, 15, 15, 0.5));
+  pointer-events: none;
+}
+
+.scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0;
+  background: linear-gradient(90deg, rgba(24, 33, 34, 0.92), rgba(24, 33, 34, 0.6) 55%, rgba(24, 33, 34, 0.15));
+  pointer-events: none;
+}
+
+.endFade {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0;
+  background: var(--slate);
+  pointer-events: none;
+}
+
+.overlayA,
+.overlayB,
+.hint {
+  position: absolute;
+  z-index: 3;
+}
+
+.overlayA {
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  padding: 5rem 1.25rem 4rem;
+  text-align: center;
+  will-change: transform, opacity;
+}
+
+.logo {
+  width: clamp(88px, 14vw, 128px);
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: clamp(2.6rem, 9vw, 6rem);
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1rem, 2.6vw, 1.35rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 9.5rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.2s, filter 0.2s, background-color 0.2s;
+}
+
+.primary {
+  background: var(--orange);
+  color: #0a0a0a;
+}
+
+.secondary {
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  background: rgba(15, 15, 15, 0.35);
+  color: var(--text);
+}
+
+.primary:hover,
+.secondary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.overlayB {
+  inset: 0 auto 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 50rem;
+  padding: 5rem 1.5rem 4rem;
+  opacity: 0;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.introTitle {
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.05;
+}
+
+.introTitle::after {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 3px;
+  margin-top: 0.9rem;
+  background: var(--green);
+}
+
+.introText {
+  max-width: 28rem;
+  margin: 0;
+  color: #d8d8d8;
+  font-size: 1.05rem;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  background: rgba(15, 15, 15, 0.45);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.tabs a:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.hint {
+  left: 50%;
+  bottom: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  translate: -50% 0;
+  color: var(--text);
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.hint i {
+  position: relative;
+  width: 1px;
+  height: 2.2rem;
+  background: rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+}
+
+.hint i::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--green);
+  animation: drip 1.8s cubic-bezier(0.6, 0, 0.3, 1) infinite;
+}
+
+@keyframes drip {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* loop mode (reduced motion / optional mobile): no scrub, no intro overlay */
+.loop {
+  height: auto;
+}
+
+.loop .stage {
+  position: relative;
+}
+
+.loop .overlayB,
+.loop .hint,
+.loop .scrim,
+.loop .endFade {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .overlayB {
+    padding-left: max(3rem, 6vw);
+    width: 50%;
+  }
+}

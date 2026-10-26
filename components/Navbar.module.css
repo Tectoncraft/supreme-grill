@@ -1,0 +1,242 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  transition: transform 0.35s cubic-bezier(0.3, 0.8, 0.3, 1);
+}
+
+.header[data-hidden='true'] {
+  transform: translateY(-100%);
+}
+
+.bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 4.5rem;
+  padding: 0 1rem;
+  background: transparent;
+  transition: background-color 0.3s, backdrop-filter 0.3s, box-shadow 0.3s;
+}
+
+.header[data-scrolled='true'] .bar,
+.header[data-open='true'] .bar {
+  background: rgba(15, 15, 15, 0.75);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.logo {
+  display: block;
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.desktopNav,
+.desktopOnly,
+.call {
+  display: none;
+}
+
+.list {
+  position: relative;
+  display: flex;
+  gap: 1.4rem;
+  margin: 0;
+  padding: 0 0 0.45rem;
+  list-style: none;
+}
+
+.link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text);
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.link:hover,
+.link[aria-current='true'] {
+  opacity: 1;
+}
+
+/* 1px wide, scaled to the active link's width so only transforms animate */
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 2px;
+  background: var(--green);
+  transform-origin: 0 50%;
+  opacity: 0;
+  transition: transform 0.35s cubic-bezier(0.3, 0.8, 0.3, 1), opacity 0.2s;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.call,
+.callBig {
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  background: var(--orange);
+  color: #0a0a0a;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.call:hover,
+.callBig:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.burger {
+  display: grid;
+  place-content: center;
+  gap: 6px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--text);
+  transition: transform 0.3s;
+}
+
+.burger[aria-expanded='true'] span:first-child {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.burger[aria-expanded='true'] span:last-child {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5.5rem 1.5rem 2rem;
+  background: rgba(15, 15, 15, 0.97);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0s 0.3s;
+  overflow-y: auto;
+}
+
+.header[data-open='true'] .overlay {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s;
+}
+
+.overlayList {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.overlayList li,
+.overlayFoot {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.header[data-open='true'] .overlayList li,
+.header[data-open='true'] .overlayFoot {
+  opacity: 1;
+  transform: none;
+  transition-delay: calc(0.08s + var(--i) * 0.05s);
+}
+
+.overlayList a {
+  display: block;
+  padding: 0.35rem 0;
+  font-family: var(--font-heading-stack);
+  font-size: clamp(1.8rem, 8vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.overlayList a[aria-current='true'] {
+  color: var(--green);
+}
+
+.overlayFoot {
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+}
+
+.callBig {
+  display: inline-flex;
+  font-size: 1rem;
+  padding: 0.85rem 1.5rem;
+}
+
+@media (min-width: 1180px) {
+  .bar {
+    padding: 0 2rem;
+  }
+  .desktopNav,
+  .desktopOnly {
+    display: block;
+  }
+  .call {
+    display: inline-flex;
+  }
+  .burger,
+  .overlay {
+    display: none;
+  }
+}
+
+@media (min-width: 1180px) and (max-width: 1360px) {
+  .list {
+    gap: 1rem;
+  }
+  .desktopOnly > span {
+    min-width: 0;
+  }
+}

@@ -1,0 +1,50 @@
+.button,
+.close {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border: 0;
+  background: none;
+  color: var(--text);
+  font: 600 0.8rem/1 var(--font-body-stack);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.button:hover,
+.close:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.dialog {
+  width: min(28rem, calc(100vw - 2rem));
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--slate);
+  color: var(--text);
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.inner {
+  display: grid;
+  gap: 1rem;
+  padding: 1.6rem;
+  justify-items: start;
+}
+
+.title {
+  font-size: 1.6rem;
+}
+
+.todo {
+  margin: 0;
+  color: #cfcfcf;
+}

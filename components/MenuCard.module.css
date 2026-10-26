@@ -1,0 +1,103 @@
+.reveal {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(15, 15, 15, 0.28);
+  transition: transform 0.15s ease-out, border-color 0.2s;
+  will-change: transform;
+}
+
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-size: 1.3rem;
+  line-height: 1.15;
+}
+
+.name {
+  font-weight: 600;
+  letter-spacing: 0.07em;
+}
+
+/* hairline dotted leader, like the printed menu */
+.leader {
+  flex: 1;
+  min-width: 0.8rem;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+  transform: translateY(-0.2em);
+}
+
+.price {
+  color: var(--orange);
+  font-family: var(--font-heading-stack);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.desc {
+  margin: 0;
+  max-width: 34ch;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.variants {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.variants li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.vlabel {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 639px) {
+  .card {
+    flex-direction: row;
+  }
+  .card > :first-child {
+    flex: none;
+    width: 6rem;
+  }
+  .body {
+    flex: 1;
+    min-width: 0;
+    padding: 0.8rem 0.9rem;
+  }
+  .head,
+  .price {
+    font-size: 1.15rem;
+  }
+}

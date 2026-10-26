@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "title": "Supreme Grill Landstuhl – Döner, Pizza & Finger Food",
+    "description": "Supreme Grill in Landstuhl: döner, kebab bowls, build-your-own pizza, finger food and veggie options. Since 2022. Monday to Saturday 11 am–8 pm."
+  },
+  "nav": {
+    "main": "Main navigation",
+    "home": "Supreme Grill – go to start",
+    "start": "Home",
+    "menu": "Menu",
+    "about": "About us",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "contact": "Contact",
+    "call": "Call us",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "badge": {
+    "open": "Open now · until {time}",
+    "closed": "Closed · opens {day} {time}"
+  },
+  "days": [
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat"
+  ],
+  "lang": {
+    "label": "Choose language",
+    "de": "DE",
+    "en": "EN"
+  },
+  "hero": {
+    "logoAlt": "Supreme Grill logo",
+    "subtitle": "Since {year} in {city}",
+    "menu": "Menu",
+    "route": "Directions",
+    "scroll": "Scroll"
+  },
+  "menuIntro": {
+    "title": "Our Menu",
+    "tagline": "Döner, pizza, finger food and more – fresh off the grill.",
+    "tabsLabel": "Categories",
+    "tabs": {
+      "kebab": "Kebab",
+      "pizza": "Pizza",
+      "fingerfood": "Finger food",
+      "bowls": "Bowls",
+      "veggie": "Veggie",
+      "drinks": "Drinks",
+      "dips": "Dips",
+      "menus": "Menus"
+    }
+  },
+  "menu": {
+    "eyebrow": "Since 2022",
+    "title": "Menu",
+    "lead": "Chicken döner, pizza your way, finger food, bowls and veggie. Take your pick.",
+    "tabsLabel": "Categories",
+    "veggieOnly": "Vegetarian only",
+    "empty": "Nothing vegetarian here.",
+    "imageSoon": "Photo soon",
+    "categories": {
+      "kebab": {
+        "name": "Kebab",
+        "note": "Chicken"
+      },
+      "pizza": {
+        "name": "Pizza",
+        "note": "Do it yourself"
+      },
+      "fingerfood": {
+        "name": "Finger food",
+        "note": ""
+      },
+      "bowls": {
+        "name": "Bowls",
+        "note": ""
+      },
+      "veggie": {
+        "name": "Veggie",
+        "note": ""
+      },
+      "drinks": {
+        "name": "Drinks",
+        "note": "Deposit included in the price"
+      },
+      "dips": {
+        "name": "Dips",
+        "note": ""
+      },
+      "menus": {
+        "name": "Menus",
+        "note": ""
+      }
+    },
+    "variants": {
+      "normal": "Regular",
+      "cheese": "with cheese",
+      "6er": "6 pcs",
+      "9er": "9 pcs",
+      "12er": "12 pcs"
+    },
+    "items": {
+      "kebab": "Döner meat, salad of your choice, dressing",
+      "kebab-bowl": "Döner meat, fries, salad",
+      "kebab-vegetarisch": "",
+      "pommes": "with mayonnaise or ketchup",
+      "tender": "Fillet pieces in house-made breading",
+      "wings": "Chicken wings in house-made breading",
+      "classic-salad": "Green salad with cabbage, tomatoes, cucumber, onions & dressing",
+      "chicken-salad": "Green salad with tomatoes, cucumber, onions, tender strips & dressing",
+      "bauern-salad": "Fresh tomatoes, cucumber, olives, onions & feta",
+      "falafel": "Fried balls of chickpeas & spices",
+      "falafel-bowl": "Salad with falafel & dressing",
+      "falafel-sandwich": "Falafel in bread with salad of your choice & dressing",
+      "vegetarischer-kebab": "",
+      "softdrinks": "Cola, Cola Zero, Sprite, Fanta, Uludağ",
+      "capri-sun": "",
+      "ayran": "",
+      "wasser": "",
+      "doener-dip": "",
+      "barbeque-dip": "",
+      "tomatensauce-dip": "",
+      "ketchup-mayo": "",
+      "kindermenue": "4 wings, small fries & a drink",
+      "kebabmenue": "Döner and a drink",
+      "schueler-studenten": "Döner and a drink",
+      "doppel-d": "2 döner",
+      "combi-box": "6 wings + 4 tenders"
+    },
+    "doenerstag": {
+      "eyebrow": "Every Thursday",
+      "title": "Dönerstag",
+      "text": "Every döner {price}, with cheese {cheese}.",
+      "today": "Today is Dönerstag!",
+      "tomorrow": "1 day until Dönerstag",
+      "countdown": "{n} days until Dönerstag",
+      "normal": "Döner",
+      "cheese": "with cheese"
+    },
+    "pizza": {
+      "eyebrow": "Do it yourself",
+      "title": "Your pizza",
+      "lead": "Tomato sauce and cheese are on. The rest is up to you.",
+      "rule": "Up to {included} toppings included, each additional +{extra}. Döner meat +{meat}.",
+      "toppings": "Toppings",
+      "picked": "{n} of {included} included",
+      "pickedOver": "{n} chosen · {over} extra",
+      "base": "Base",
+      "extras": "Extra toppings",
+      "meat": "Döner meat",
+      "total": "Your price",
+      "reset": "Reset"
+    },
+    "allergens": {
+      "button": "Allergens & additives",
+      "title": "Allergens & additives",
+      "todo": "TODO: Labelling follows once the legend is available. Until then, please ask us directly.",
+      "close": "Close"
+    }
+  },
+  "footer": {
+    "tagline": "Döner, pizza and finger food. Made fresh, in {city} since {year}.",
+    "address": "Address",
+    "route": "Get directions",
+    "phone": "Phone",
+    "hours": "Opening hours",
+    "closed": "Closed",
+    "today": "Today",
+    "links": "Pages",
+    "impressum": "Legal notice",
+    "datenschutz": "Privacy policy",
+    "cookies": "Cookie settings",
+    "credit": "Website by",
+    "rights": "All rights reserved.",
+    "adminAria": "Back to top"
+  },
+  "legal": {
+    "back": "Back to home",
+    "todo": "TODO: Details to follow (owner name, address, email and other required legal details).",
+    "impressumTitle": "Legal notice",
+    "datenschutzTitle": "Privacy policy"
+  },
+  "daysLong": [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ]
+}
