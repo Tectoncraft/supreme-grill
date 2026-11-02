@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import CookieBanner from '@/components/CookieBanner';
 import { body, heading } from '@/lib/fonts';
 import { getMessages, isLocale, locales } from '@/lib/i18n';
 import '../globals.css';
@@ -38,7 +39,10 @@ export default async function LocaleLayout({
   if (!isLocale(locale)) notFound();
   return (
     <html lang={locale} className={`${body.variable} ${heading.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieBanner locale={locale} text={getMessages(locale).cookie} />
+      </body>
     </html>
   );
 }

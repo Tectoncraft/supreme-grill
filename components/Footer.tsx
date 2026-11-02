@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { activeNavSections, routeUrl, site } from '@/config/site';
 import { getBerlinDay } from '@/lib/hours';
+import { openConsentSettings } from '@/lib/consent';
 import { fmt, type Locale, type Messages } from '@/lib/i18n';
 import LanguageSwitch from './LanguageSwitch';
 import styles from './Footer.module.css';
@@ -102,8 +103,7 @@ export default function Footer({ locale, footer: f, nav, lang, daysLong }: Props
               <Link href={`/${locale}/datenschutz/`}>{f.datenschutz}</Link>
             </li>
             <li>
-              {/* TODO: reopen the cookie banner once it exists */}
-              <button type="button" className={styles.linkButton}>
+              <button type="button" className={styles.linkButton} onClick={openConsentSettings}>
                 {f.cookies}
               </button>
             </li>

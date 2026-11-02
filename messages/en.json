@@ -180,13 +180,173 @@
     "cookies": "Cookie settings",
     "credit": "Website by",
     "rights": "All rights reserved.",
-    "adminAria": "Back to top"
+    "adminAria": "Back to top",
+    "privacyShort": "Privacy policy"
   },
   "legal": {
     "back": "Back to home",
-    "todo": "TODO: Details to follow (owner name, address, email and other required legal details).",
-    "impressumTitle": "Legal notice",
-    "datenschutzTitle": "Privacy policy"
+    "draft": "Draft: the marked TODO items are still missing and must be completed by the owner and legally reviewed before launch.",
+    "impressum": {
+      "title": "Legal notice",
+      "sections": [
+        {
+          "h": "Information pursuant to § 5 DDG",
+          "p": [
+            "{owner}",
+            "{name}",
+            "{street}",
+            "{zip} {city}",
+            "{country}"
+          ]
+        },
+        {
+          "h": "Represented by",
+          "p": [
+            "{representative}"
+          ]
+        },
+        {
+          "h": "Contact",
+          "p": [
+            "Phone: {phone}",
+            "Email: {email}"
+          ]
+        },
+        {
+          "h": "VAT ID",
+          "p": [
+            "VAT identification number (§ 27a UStG): {vatId}"
+          ]
+        },
+        {
+          "h": "Commercial register",
+          "p": [
+            "{register}"
+          ]
+        },
+        {
+          "h": "Responsible for content (§ 18(2) MStV)",
+          "p": [
+            "{owner}, address as above."
+          ]
+        },
+        {
+          "h": "Consumer dispute resolution",
+          "p": [
+            "{dispute}"
+          ]
+        },
+        {
+          "h": "Liability for content",
+          "p": [
+            "As a service provider we are responsible for our own content under general law. We are not obliged to monitor third-party information. Once we learn of a violation, we remove the content promptly."
+          ]
+        },
+        {
+          "h": "Liability for links",
+          "p": [
+            "This site links to external third-party sites whose content we do not control. We accept no liability for it; the respective provider is always responsible."
+          ]
+        },
+        {
+          "h": "Copyright and image credits",
+          "p": [
+            "The content of this site is subject to German copyright law. The food photos currently shown are placeholders (stock photos from Pexels) and do not necessarily show the restaurant's dishes. {images}"
+          ]
+        },
+        {
+          "h": "Web design",
+          "p": [
+            "Website by {credit}."
+          ]
+        }
+      ]
+    },
+    "datenschutz": {
+      "title": "Privacy policy",
+      "sections": [
+        {
+          "h": "1. Controller",
+          "p": [
+            "The controller for data processing on this website is:",
+            "{owner}",
+            "{name}, {street}, {zip} {city}, {country}",
+            "Phone: {phone}, email: {email}"
+          ]
+        },
+        {
+          "h": "2. In short",
+          "p": [
+            "This website has no user accounts, no tracking, no analytics and no advertising services. We set no cookies for marketing. Content from external providers is loaded only after you consent."
+          ]
+        },
+        {
+          "h": "3. Hosting and server log files",
+          "p": [
+            "When you open the site, the hosting provider processes technically necessary data (IP address, date and time, page requested, browser type) to deliver and secure the site. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in stable, secure operation).",
+            "Hosting provider: {hosting}",
+            "Log retention: {logs}"
+          ]
+        },
+        {
+          "h": "4. Local storage in your browser",
+          "p": [
+            "We store only two items in your browser's local storage: your language choice (key “sg-locale”) and your cookie decision with timestamp (key “sg-consent”, valid 12 months). Both are required for functions you request and contain no names or contact data.",
+            "Legal basis: § 25(2) no. 2 TDDDG and Art. 6(1)(f) GDPR."
+          ]
+        },
+        {
+          "h": "5. Consent and withdrawal",
+          "p": [
+            "On your first visit we ask whether external media may be loaded. “Necessary only” and “Accept all” carry equal weight. You can change or withdraw your decision at any time via “Cookie settings” in the footer. Withdrawal applies going forward and does not affect earlier processing."
+          ]
+        },
+        {
+          "h": "6. Fonts",
+          "p": [
+            "Fonts are served from our own server. No connection to Google Fonts or other font services is made."
+          ]
+        },
+        {
+          "h": "7. Map (Google Maps)",
+          "p": [
+            "An embedded map loads only after you explicitly agree (category “External media” or the “Load map” button). Your browser then connects to servers of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland; Google receives, among other things, your IP address and browser data. A transfer to Google LLC in the USA is possible.",
+            "Legal basis: Art. 6(1)(a) GDPR and § 25(1) TDDDG. Without consent, no connection to Google is made.",
+            "{maps}"
+          ]
+        },
+        {
+          "h": "8. External links",
+          "p": [
+            "Links to Google Maps (directions) and Instagram open an external service only after you click. From then on the provider's privacy policy applies."
+          ]
+        },
+        {
+          "h": "9. Getting in touch",
+          "p": [
+            "If you call or write to us, we process your details to handle your request (Art. 6(1)(b) or (f) GDPR) and delete them once no longer needed and no retention duty applies."
+          ]
+        },
+        {
+          "h": "10. Your rights",
+          "p": [
+            "You have the right of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction (Art. 18), data portability (Art. 20) and objection (Art. 21 GDPR). Use the contact details above."
+          ]
+        },
+        {
+          "h": "11. Right to complain",
+          "p": [
+            "You may lodge a complaint with a data protection supervisory authority. {authority}"
+          ]
+        },
+        {
+          "h": "12. Last updated",
+          "p": [
+            "{date}"
+          ]
+        }
+      ]
+    }
   },
   "daysLong": [
     "Sunday",
@@ -196,5 +356,27 @@
     "Thursday",
     "Friday",
     "Saturday"
-  ]
+  ],
+  "cookie": {
+    "title": "Cookies & local storage",
+    "text": "We store only what the site needs to run: your language and this decision. External content such as the map loads only once you agree.",
+    "more": "More in the privacy policy",
+    "acceptAll": "Accept all",
+    "necessaryOnly": "Necessary only",
+    "settings": "Settings",
+    "settingsTitle": "Cookie settings",
+    "settingsLead": "You decide what may load. You can change this at any time in the footer.",
+    "necessary": {
+      "name": "Necessary",
+      "desc": "Stores your language choice and this decision in your browser. Always on."
+    },
+    "media": {
+      "name": "External media",
+      "desc": "Google Maps (map). Loading it transfers data, e.g. your IP address, to Google."
+    },
+    "save": "Save selection",
+    "on": "On",
+    "alwaysOn": "Always on",
+    "region": "Cookie notice"
+  }
 }

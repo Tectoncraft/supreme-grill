@@ -38,3 +38,20 @@ export const navSections = [
 ] as const;
 
 export const activeNavSections = navSections.filter((s) => s.enabled);
+
+// Legal details the owner still has to supply. Never invent these; they render as marked TODOs.
+export const legal = {
+  owner: '[TODO: Name des Inhabers bzw. der Gesellschaft inkl. Rechtsform]',
+  representative: '[TODO: Vertretungsberechtigte Person, falls abweichend]',
+  email: '[TODO: E-Mail-Adresse]',
+  vatId: '[TODO: USt-IdNr., falls vorhanden]',
+  register: '[TODO: Handelsregister und Registernummer, falls vorhanden – sonst Abschnitt streichen]',
+  dispute: '[TODO: Angabe zur Teilnahme an Verbraucherschlichtungsverfahren nach § 36 VSBG]',
+  images: '[TODO: Bildnachweise ergänzen bzw. Platzhalterbilder durch eigene Fotos ersetzen]',
+  hosting: '[TODO: Hosting-Anbieter inkl. Anschrift]',
+  logs: '[TODO: Speicherdauer der Logfiles laut Hosting-Anbieter]',
+  maps: '[TODO: Abschnitt prüfen/anpassen, sobald die Karte eingebunden ist]',
+  authority:
+    '[TODO: zuständige Aufsichtsbehörde bestätigen, voraussichtlich: Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz, Hintere Bleiche 34, 55116 Mainz]',
+  date: '[TODO: Stand (Datum) eintragen]',
+} as const;

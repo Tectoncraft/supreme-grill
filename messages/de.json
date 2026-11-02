@@ -180,13 +180,173 @@
     "cookies": "Cookie-Einstellungen",
     "credit": "Website by",
     "rights": "Alle Rechte vorbehalten.",
-    "adminAria": "Zurück nach oben"
+    "adminAria": "Zurück nach oben",
+    "privacyShort": "Datenschutz"
   },
   "legal": {
     "back": "Zurück zur Startseite",
-    "todo": "TODO: Angaben folgen (Name, Anschrift, E-Mail und weitere Pflichtangaben vom Inhaber).",
-    "impressumTitle": "Impressum",
-    "datenschutzTitle": "Datenschutz"
+    "draft": "Entwurf: Die markierten TODO-Angaben fehlen noch und müssen vor der Veröffentlichung vom Inhaber ergänzt und rechtlich geprüft werden.",
+    "impressum": {
+      "title": "Impressum",
+      "sections": [
+        {
+          "h": "Angaben gemäß § 5 DDG",
+          "p": [
+            "{owner}",
+            "{name}",
+            "{street}",
+            "{zip} {city}",
+            "{country}"
+          ]
+        },
+        {
+          "h": "Vertreten durch",
+          "p": [
+            "{representative}"
+          ]
+        },
+        {
+          "h": "Kontakt",
+          "p": [
+            "Telefon: {phone}",
+            "E-Mail: {email}"
+          ]
+        },
+        {
+          "h": "Umsatzsteuer-ID",
+          "p": [
+            "Umsatzsteuer-Identifikationsnummer nach § 27a UStG: {vatId}"
+          ]
+        },
+        {
+          "h": "Handelsregister",
+          "p": [
+            "{register}"
+          ]
+        },
+        {
+          "h": "Verantwortlich für den Inhalt (§ 18 Abs. 2 MStV)",
+          "p": [
+            "{owner}, Anschrift wie oben."
+          ]
+        },
+        {
+          "h": "Verbraucherstreitbeilegung",
+          "p": [
+            "{dispute}"
+          ]
+        },
+        {
+          "h": "Haftung für Inhalte",
+          "p": [
+            "Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen. Bei Bekanntwerden von Rechtsverletzungen entfernen wir entsprechende Inhalte umgehend."
+          ]
+        },
+        {
+          "h": "Haftung für Links",
+          "p": [
+            "Diese Website enthält Links zu externen Seiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte übernehmen wir keine Gewähr. Verantwortlich ist stets der jeweilige Anbieter."
+          ]
+        },
+        {
+          "h": "Urheberrecht und Bildnachweis",
+          "p": [
+            "Die Inhalte dieser Website unterliegen dem deutschen Urheberrecht. Die derzeit gezeigten Speisenbilder sind Platzhalter (Stockfotos von Pexels) und zeigen nicht zwingend die Gerichte des Restaurants. {images}"
+          ]
+        },
+        {
+          "h": "Webdesign",
+          "p": [
+            "Website von {credit}."
+          ]
+        }
+      ]
+    },
+    "datenschutz": {
+      "title": "Datenschutzerklärung",
+      "sections": [
+        {
+          "h": "1. Verantwortlicher",
+          "p": [
+            "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
+            "{owner}",
+            "{name}, {street}, {zip} {city}, {country}",
+            "Telefon: {phone}, E-Mail: {email}"
+          ]
+        },
+        {
+          "h": "2. Das Wichtigste in Kürze",
+          "p": [
+            "Diese Website kommt ohne Benutzerkonto, ohne Tracking, ohne Analyse- und ohne Werbedienste aus. Wir setzen keine Cookies zu Marketingzwecken. Inhalte externer Anbieter werden erst nach deiner Einwilligung geladen."
+          ]
+        },
+        {
+          "h": "3. Hosting und Server-Logfiles",
+          "p": [
+            "Beim Aufruf der Seite verarbeitet der Hosting-Anbieter technisch notwendige Daten (IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browsertyp). Das ist nötig, um die Seite auszuliefern und sicher zu betreiben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem stabilen und sicheren Betrieb).",
+            "Hosting-Anbieter: {hosting}",
+            "Speicherdauer der Logfiles: {logs}"
+          ]
+        },
+        {
+          "h": "4. Lokale Speicherung im Browser",
+          "p": [
+            "Wir speichern im lokalen Speicher deines Browsers (localStorage) ausschließlich: deine Sprachwahl (Schlüssel „sg-locale“) und deine Cookie-Entscheidung samt Zeitpunkt (Schlüssel „sg-consent“, gültig 12 Monate). Beides ist für den Betrieb der von dir gewünschten Funktionen erforderlich und enthält keine personenbezogenen Daten im Sinne von Namen oder Kontaktdaten.",
+            "Rechtsgrundlage: § 25 Abs. 2 Nr. 2 TDDDG sowie Art. 6 Abs. 1 lit. f DSGVO."
+          ]
+        },
+        {
+          "h": "5. Einwilligung und Widerruf",
+          "p": [
+            "Beim ersten Besuch fragen wir dich, ob externe Medien geladen werden dürfen. „Nur notwendige“ und „Alle akzeptieren“ sind gleichwertig. Du kannst deine Entscheidung jederzeit über den Link „Cookie-Einstellungen“ im Seitenfuß ändern oder widerrufen. Der Widerruf wirkt für die Zukunft; die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt unberührt."
+          ]
+        },
+        {
+          "h": "6. Schriftarten",
+          "p": [
+            "Die verwendeten Schriftarten werden von unserem eigenen Server ausgeliefert. Es findet keine Verbindung zu Google Fonts oder anderen Schriftdiensten statt."
+          ]
+        },
+        {
+          "h": "7. Karte (Google Maps)",
+          "p": [
+            "Eine eingebettete Karte wird erst geladen, nachdem du ausdrücklich zugestimmt hast (Kategorie „Externe Medien“ bzw. Button „Karte laden“). Dabei verbindet sich dein Browser mit Servern der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland; Google erhält u. a. deine IP-Adresse und Browserdaten. Eine Übermittlung an Google LLC in die USA ist möglich.",
+            "Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Ohne Einwilligung findet keine Verbindung zu Google statt.",
+            "{maps}"
+          ]
+        },
+        {
+          "h": "8. Externe Links",
+          "p": [
+            "Links zu Google Maps (Routenplaner) und Instagram öffnen erst nach deinem Klick einen externen Dienst. Ab diesem Zeitpunkt gelten die Datenschutzbestimmungen des jeweiligen Anbieters."
+          ]
+        },
+        {
+          "h": "9. Kontaktaufnahme",
+          "p": [
+            "Wenn du uns anrufst oder schreibst, verarbeiten wir deine Angaben zur Bearbeitung der Anfrage (Art. 6 Abs. 1 lit. b oder f DSGVO) und löschen sie, sobald sie nicht mehr erforderlich sind und keine Aufbewahrungspflichten entgegenstehen."
+          ]
+        },
+        {
+          "h": "10. Deine Rechte",
+          "p": [
+            "Du hast das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21 DSGVO). Wende dich dafür an die oben genannten Kontaktdaten."
+          ]
+        },
+        {
+          "h": "11. Beschwerderecht",
+          "p": [
+            "Du kannst dich bei einer Datenschutz-Aufsichtsbehörde beschweren. {authority}"
+          ]
+        },
+        {
+          "h": "12. Stand",
+          "p": [
+            "{date}"
+          ]
+        }
+      ]
+    }
   },
   "daysLong": [
     "Sonntag",
@@ -196,5 +356,27 @@
     "Donnerstag",
     "Freitag",
     "Samstag"
-  ]
+  ],
+  "cookie": {
+    "title": "Cookies & lokale Speicherung",
+    "text": "Wir speichern nur, was die Seite zum Laufen braucht: deine Sprache und diese Entscheidung. Externe Inhalte wie die Karte laden erst, wenn du zustimmst.",
+    "more": "Mehr in der Datenschutzerklärung",
+    "acceptAll": "Alle akzeptieren",
+    "necessaryOnly": "Nur notwendige",
+    "settings": "Einstellungen",
+    "settingsTitle": "Cookie-Einstellungen",
+    "settingsLead": "Du entscheidest, was geladen werden darf. Du kannst das jederzeit im Seitenfuß ändern.",
+    "necessary": {
+      "name": "Notwendig",
+      "desc": "Speichert deine Sprachwahl und diese Entscheidung im Browser. Immer aktiv."
+    },
+    "media": {
+      "name": "Externe Medien",
+      "desc": "Google Maps (Karte). Beim Laden werden Daten, z. B. deine IP-Adresse, an Google übertragen."
+    },
+    "save": "Auswahl speichern",
+    "on": "An",
+    "alwaysOn": "Immer aktiv",
+    "region": "Cookie-Hinweis"
+  }
 }
